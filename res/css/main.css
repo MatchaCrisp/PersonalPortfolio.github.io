@@ -1,0 +1,212 @@
+/*=====================mobile first page layout================*/
+/*-------------------------
+  --welcome (with full screen bg)-----
+  --welcome---------
+  --welcome (full page)---------
+  -----works (full second page)------------
+  -----------works----------
+  -----------works-----------
+  -------(fixed nav)----------
+  -----------footer------------- 
+*/
+
+/*===============desktop page layout============*/
+/*------------banner---------
+  ----------nav--------------
+  --------main(articles)-----
+  ------article--------------
+  ----------article----------
+  ----------footer-----------
+*/
+/* =============CSS reset=================================== */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+a {
+    text-decoration:none;
+}
+/*===========================================================*/
+
+/*=============globals===================*/
+
+*, *::before {
+    box-sizing:border-box;
+    margin:0;
+}
+
+html {
+    font-size:16px;
+    color:white;
+}
+
+body {
+    position:relative;
+}
+/*==============================*/
+
+/*===============welcome-section==================*/
+
+#welcome-section {
+    height:100vh;
+    background-color:black;
+}
+/*=============================================*/
+
+/*===============projects==================*/
+#projects {
+    position:relative;
+    height:100vh;
+    background-color:darkgray;
+    overflow:hidden;
+}
+
+.project-tile {
+    height:100px;
+    width:100px;
+    background-color:brown;
+    position:absolute;
+}
+
+#GTA {
+    top:20%;
+    left:20%;
+    transform:rotate(90deg);
+    /*animation-name:wheel;
+    animation-duration:20s;
+    animation-timing-function: ease-in-out;
+    animation-direction:backwards;
+    animation-iteration-count: infinite;
+    transform-origin: -50% -50%;*/
+}
+
+#music {
+    top:20%;
+    left:20%;
+    animation-name:wheel;
+    animation-duration:20s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction:backwards;
+    animation-delay:-5s;
+    transform-origin: -50% -50%;
+}
+
+#sales {
+    top:20%;
+    left:20%;
+    animation-name:wheel;
+    animation-duration:20s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction:backwards;
+    animation-delay:-10s;
+    transform-origin: -50% -50%;
+}
+
+#police {
+    top:20%;
+    left:20%;
+    animation-name:wheel;
+    animation-duration:20s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction:backwards;
+    animation-delay:-15s;
+    transform-origin: -50% -50%;
+}
+@keyframes wheel {
+    0% {
+        transform:rotate(0deg);
+    }
+
+    5% {
+        transform:rotate(90deg);
+    }
+    35% {
+        transform:rotate(90deg);
+    }
+
+    40% {
+        transform:rotate(180deg);
+    }
+    60% {
+        transform:rotate(180deg);
+    }
+
+    70% {
+        transform:rotate(270deg);
+    }
+    90% {
+        transform:rotate(270deg);
+    }
+
+    100% {
+        transform:rotate(360deg);
+    }
+}
+/*=============================================*/
+
+/*===============nav==================*/
+#navbar {
+    position:fixed;
+    bottom:0;
+    left:0;
+    background-color:blue;
+    width:50%;
+}
+#navbar a {
+    color:white;
+}
+/*=============================================*/
+
+/*===============footer==================*/
+footer {
+    background-color:blue;
+    position:relative;
+    left:50%;
+    width: 50%;
+}
+
+footer a {
+    color:white;
+}
+/*=============================================*/
