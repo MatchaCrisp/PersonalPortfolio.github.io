@@ -87,7 +87,116 @@ body {
 
 #welcome-section {
     height:100vh;
+    overflow:hidden;
     background-color:black;
+    position:relative;
+}
+
+#wel_1 {
+    font-size:5rem;
+
+    position:absolute;
+    animation-name:fade_in_from_left;
+    animation-timing-function: ease-in-out;
+    top:30%;
+    animation-duration:3s;
+    animation-fill-mode:both;
+    
+}
+#wel_2 {
+    font-size:3rem;
+
+    position:absolute;
+    top:50%;
+
+    animation-name:fade_in_from_left;
+    animation-direction:reverse;
+    animation-timing-function: ease-in-out;
+
+    animation-duration:3s;
+    animation-delay:3500ms;
+    animation-fill-mode:both;
+
+}
+#name {
+    font-size:4rem;
+    position:absolute;
+    animation-name:name_down;
+    right: 1rem;
+    animation-duration:1s;
+    animation-delay:7s;
+    animation-fill-mode: both;
+    z-index:2;
+    color:blue;
+}
+#wel_img {
+    width:100%;
+    height:auto;
+    position:absolute;
+    animation-name:img_fade_up;
+    animation-duration:1s;
+    animation-delay:7500ms;
+    animation-fill-mode: both;
+}
+@keyframes fade_in_from_left {
+    0% {
+        opacity:0%;
+    }
+
+    5% {
+        opacity:0%;
+
+
+        left:0;
+    }
+
+    30% {
+        opacity:100%;
+
+        left:10%;
+    }
+
+    70% {
+        opacity:100%;
+
+        left:10%;
+    }
+
+    95% {
+        opacity:0%;
+
+        left:30%;
+    }
+
+    100% {
+        opacity:0%;
+    }
+}
+
+@keyframes name_down {
+    0% {
+        opacity: 0%;
+
+        top:50%;
+    }
+    100% {
+        opacity: 100%;
+
+        top:70%;
+    }
+
+
+}
+
+@keyframes img_fade_up {
+    0% {
+        opacity:0%;
+        bottom:0;
+    }
+    100% {
+        opacity:100%;
+        bottom:20%;
+    }
 }
 /*=============================================*/
 
@@ -100,87 +209,86 @@ body {
 }
 
 .project-tile {
-    height:100px;
-    width:100px;
+    height:500px;
+    width:100%;
     background-color:brown;
     position:absolute;
 }
 
 #GTA {
-    top:20%;
-    left:20%;
-    transform:rotate(90deg);
-    /*animation-name:wheel;
+    top:10%;
+    left:0;
+    animation-name:wheel;
     animation-duration:20s;
     animation-timing-function: ease-in-out;
     animation-direction:backwards;
     animation-iteration-count: infinite;
-    transform-origin: -50% -50%;*/
+    transform-origin: -100% -100%;
 }
 
 #music {
-    top:20%;
-    left:20%;
+    top:10%;
+    left:0;
     animation-name:wheel;
     animation-duration:20s;
     animation-timing-function: ease-in-out;
     animation-iteration-count: infinite;
     animation-direction:backwards;
     animation-delay:-5s;
-    transform-origin: -50% -50%;
+    transform-origin: -100% -100%;
 }
 
 #sales {
-    top:20%;
-    left:20%;
+    top:10%;
+    left:0;
     animation-name:wheel;
     animation-duration:20s;
     animation-timing-function: ease-in-out;
     animation-iteration-count: infinite;
     animation-direction:backwards;
     animation-delay:-10s;
-    transform-origin: -50% -50%;
+    transform-origin: -100% -100%;
 }
 
 #police {
-    top:20%;
-    left:20%;
+    top:10%;
+    left:0;
     animation-name:wheel;
     animation-duration:20s;
     animation-timing-function: ease-in-out;
     animation-iteration-count: infinite;
     animation-direction:backwards;
     animation-delay:-15s;
-    transform-origin: -50% -50%;
+    transform-origin: -100% -100%;
 }
 @keyframes wheel {
     0% {
         transform:rotate(0deg);
+        z-index:-1;
     }
 
-    5% {
+    15% {
         transform:rotate(90deg);
-    }
-    35% {
-        transform:rotate(90deg);
+
     }
 
-    40% {
+    30% {
         transform:rotate(180deg);
     }
-    60% {
-        transform:rotate(180deg);
-    }
-
     70% {
         transform:rotate(270deg);
+        z-index:2;
     }
-    90% {
-        transform:rotate(270deg);
+
+    73% {
+        transform:rotate(360deg);
+        background-color:black;
     }
+
 
     100% {
         transform:rotate(360deg);
+        background-color:black;
     }
 }
 /*=============================================*/
@@ -190,23 +298,54 @@ body {
     position:fixed;
     bottom:0;
     left:0;
-    background-color:blue;
-    width:50%;
+    z-index:10;
+
+    width:60%;
 }
 #navbar a {
-    color:white;
-}
-/*=============================================*/
-
-/*===============footer==================*/
-footer {
-    background-color:blue;
     position:relative;
-    left:50%;
-    width: 50%;
+    color:white;
+    font-size:2rem;
+    display:block;
+    padding:0.5rem;
+
 }
 
-footer a {
-    color:white;
+#navbar a:hover {
+    color:gray;
+}
+#highlights {
+    animation-name:fade_left;
+    animation-duration: 500ms;
+    animation-delay: 7500ms;
+    animation-timing-function: ease-out;
+    animation-fill-mode:both;
+}
+
+#profile-link {
+    animation-name:fade_left;
+    animation-duration: 500ms;
+    animation-delay: 7750ms;
+    animation-timing-function: ease-out;
+    animation-fill-mode:both;
+}
+
+#contact {
+    animation-name:fade_left;
+    animation-duration: 500ms;
+    animation-delay: 7900ms;
+    animation-timing-function: ease-out;
+    animation-fill-mode:both;
+}
+@keyframes fade_left {
+    0% {
+        opacity:0%;
+        right:20%;
+    }
+
+    100% {
+        opacity:100%;
+        right:0;
+    }
 }
 /*=============================================*/

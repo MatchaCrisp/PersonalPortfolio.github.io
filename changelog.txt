@@ -1,4 +1,7 @@
 v0.1
    basic DOM tree
    basic mobile first CSS
-   
+
+v0.2
+   finish mobile template
+   to do: fonts, colour, img, txt_content
