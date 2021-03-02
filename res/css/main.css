@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,600;1,400;1,600&display=swap');
 /*=====================mobile first page layout================*/
 /*-------------------------
   --welcome (with full screen bg)-----
@@ -75,26 +76,40 @@ a {
 
 html {
     font-size:16px;
-    color:white;
+    font-family:'EB Garamond', serif;
+    color:var(--col-4);
 }
 
 body {
     position:relative;
 }
 /*==============================*/
+/*================colour======================*/
 
+:root {
+    --col-1:#FFFFFF;
+    --col-2:#4d4dff;
+    --col-3:#ff4d4d;
+    --col-4:#e8e8fb;
+    --col-5:#434355;
+    --col-6:#3655b3;
+    --col-7:#b33636;
+    --col-8:#000000;
+
+}
+/*===========================================*/
 /*===============welcome-section==================*/
 
 #welcome-section {
     height:100vh;
     overflow:hidden;
-    background-color:black;
+    background-color:var(--col-8);
     position:relative;
 }
 
 #wel_1 {
     font-size:5rem;
-
+    font-weight:600;
     position:absolute;
     animation-name:fade_in_from_left;
     animation-timing-function: ease-in-out;
@@ -105,7 +120,7 @@ body {
 }
 #wel_2 {
     font-size:3rem;
-
+    font-weight:600;
     position:absolute;
     top:50%;
 
@@ -120,6 +135,9 @@ body {
 }
 #name {
     font-size:4rem;
+    font-weight:600;
+    font-style:italic;
+    color:var(--col-2);
     position:absolute;
     animation-name:name_down;
     right: 1rem;
@@ -127,7 +145,6 @@ body {
     animation-delay:7s;
     animation-fill-mode: both;
     z-index:2;
-    color:blue;
 }
 #wel_img {
     width:100%;
@@ -204,15 +221,30 @@ body {
 #projects {
     position:relative;
     height:100vh;
-    background-color:darkgray;
+    background-color:var(--col-8);
     overflow:hidden;
-}
 
+}
+#proj_title {
+    position:relative;
+    font-weight:600;
+    font-style:italic;
+    font-size:2rem;
+    top:5%;
+    left:5%;
+}
+.tile_title {
+    font-weight:600;
+    font-size:2rem;
+    font-style:italic;
+}
 .project-tile {
     height:500px;
     width:100%;
-    background-color:brown;
+    background-color:var(--col-8);
     position:absolute;
+    padding:5%;
+    font-size:1.5rem;
 }
 
 #GTA {
@@ -282,13 +314,13 @@ body {
 
     73% {
         transform:rotate(360deg);
-        background-color:black;
+
     }
 
 
     100% {
         transform:rotate(360deg);
-        background-color:black;
+
     }
 }
 /*=============================================*/
@@ -304,7 +336,7 @@ body {
 }
 #navbar a {
     position:relative;
-    color:white;
+    color:var(--col-4);
     font-size:2rem;
     display:block;
     padding:0.5rem;
@@ -312,7 +344,11 @@ body {
 }
 
 #navbar a:hover {
-    color:gray;
+    color:var(--col-5);
+}
+
+#navbar a:active {
+    color:var(--col-3);
 }
 #highlights {
     animation-name:fade_left;
