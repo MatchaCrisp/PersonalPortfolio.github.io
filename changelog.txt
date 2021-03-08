@@ -8,3 +8,13 @@ v0.2
 
 v0.3
    fonts, colour, txt_content
+
+v0.4
+   images, mobile up to 900px
+   todo: media queries 
+      (remove startup anim except wel_img/title anim,
+      expand main width to body, 
+      move nav to top,
+      remove project anim,
+      break proj_tiles into smaller bits,
+      make project flex container)

@@ -82,6 +82,13 @@ html {
 
 body {
     position:relative;
+    background-color: var(--col-5);
+}
+main {
+    position:relative;
+    max-width:600px;
+    margin:0 auto;
+
 }
 /*==============================*/
 /*================colour======================*/
@@ -307,18 +314,37 @@ body {
 .tile_title {
     font-weight:600;
     font-size:2rem;
-    margin-left:2rem;
-    margin-top:1rem;
+    margin:1rem 2rem 3rem 2rem;
     font-style:italic;
 }
+.ext_link_button{
+    padding:2px 5px 2px 5px;
+    position:relative;
+    text-decoration:none;
+    border-radius:2px;
+    background-color:var(--col-4);
+    color:var(--col-8);
+}
+.ext_link_button:hover{
+    bottom:2px;
+    right:2px;
+    box-shadow:2px 2px 0 var(--col-5);
+}
+.ext_link_button:active {
+    bottom:0;
+    right:0;
+    box-shadow:none;
+    background-color:var(--col-2);
+    color:var(--col-4);
+}
 .project-tile {
-    height:500px;
+    height:95%;
     width:100%;
     background-color:var(--col-8);
     position:absolute;
-
     font-size:1.5rem;
 }
+
 .project-tile p {
     margin:0.4rem;
 }
@@ -332,7 +358,22 @@ body {
     animation-iteration-count: infinite;
     transform-origin: -100% -100%;
 }
-
+#GTA p {
+    margin-left:2rem;
+}
+#GTA_img{
+    display:block;
+    width:100%;
+    height:auto;
+    margin:2rem 0 2rem 0;
+}
+#GTA_pitch{
+    margin-bottom:2rem;
+}
+.proj_desc{
+    margin-right:1rem;
+    text-align:right;
+}
 #music {
     top:10%;
     left:0;
@@ -362,12 +403,10 @@ body {
     position:relative;
     margin-top:2rem;
     margin-bottom:2rem;
-
-    
 }
-#music_desc {
-    margin-right:1rem;
-    text-align:right;
+#song_title {
+    margin-bottom:3rem;
+    font-style:italic;
 }
 #sales {
     top:10%;
@@ -380,7 +419,26 @@ body {
     animation-delay:-10s;
     transform-origin: -100% -100%;
 }
-
+#sales figure {
+    position:relative;
+    height:210px;
+    width:270px;
+    margin:1rem 0 1rem 0;
+}
+.sales_img {
+    width:100%;
+    height:auto;
+    margin-bottom:0.5rem;
+}
+#sales_smush {
+    left:calc(100% - 2rem - 270px);
+}
+#sales_smush figcaption {
+    text-align:right;
+}
+#sales_pekinese {
+    left:2rem;
+}
 #police {
     top:10%;
     left:0;
@@ -392,7 +450,11 @@ body {
     animation-delay:-15s;
     transform-origin: -100% -100%;
 }
-
+#police img {
+    width:100%;
+    height:auto;
+    margin-bottom: 1rem;
+}
 @keyframes wheel {
     0% {
         transform:rotate(0deg);
@@ -427,12 +489,12 @@ body {
 
 /*===============nav==================*/
 #navbar {
-    position:fixed;
-    bottom:0;
-    left:0;
+    position:absolute;
+    bottom:calc(100vh + 1rem);
+    left:1rem;
     z-index:10;
 
-    width:60%;
+
 }
 #navbar a {
     position:relative;
@@ -483,5 +545,10 @@ body {
         opacity:100%;
         right:0;
     }
+}
+/*=============================================*/
+/*=============================================*/
+@media only screen and (min-width:900px) {
+
 }
 /*=============================================*/
