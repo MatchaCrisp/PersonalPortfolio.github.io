@@ -439,6 +439,7 @@ main {
     color:var(--col-4);
 }
 .project-tile {
+    padding-top:4rem;
     height:95%;
     width:100%;
     background-color:var(--col-8);
@@ -506,7 +507,7 @@ main {
     margin-bottom:2rem;
 }
 #song_title {
-    margin-bottom:3rem;
+    margin-bottom:0.5rem;
     font-style:italic;
 }
 #sales {
@@ -589,11 +590,15 @@ main {
 /*=============================================*/
 
 /*===============nav==================*/
+
 #navbar {
-    position:absolute;
-    bottom:calc(100vh + 1rem);
-    left:1rem;
+    position:fixed;
+    background-color:var(--col-8);
     z-index:10;
+    padding-top:1rem;
+    left:50%;
+    width:50%;
+    max-width:300px;
 
 
 }
@@ -603,6 +608,7 @@ main {
     font-size:1.5rem;
     display:block;
     padding:0.5rem;
+    text-align:center;
 
 }
 
@@ -682,15 +688,7 @@ main {
         display:none;
         animation:none;
     }
-    #navbar {
-        top:1rem;
-        left:0;
-        width:100%;
-        bottom:auto;
-        display:flex;
-        flex-flow:row nowrap;
-        justify-content: space-evenly;
-    }
+
     #highlights {
         animation-delay:500ms;
     }
@@ -700,7 +698,12 @@ main {
     #contact {
         animation-delay:1s;
     }
-
+    #navbar {
+        display:flex;
+        flex-flow:row nowrap;
+        justify-content: space-evenly;
+        max-width:100%;
+    }
     #projects {
 
         height:min-content;
