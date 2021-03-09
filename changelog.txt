@@ -18,3 +18,7 @@ v0.4
       remove project anim,
       break proj_tiles into smaller bits,
       make project flex container)
+
+v1.0
+   media queries done.
+   todo: v1.1dev (navbar always on top for FCC)

@@ -210,6 +210,88 @@ main {
     animation-iteration-count: 2;
     animation-timing-function: ease-in-out;
 }
+#desktop_img_carousel {
+    height:300px;
+    width:400px;
+    position:absolute;
+    top:20%;
+    right:10%;
+    display:none;
+}
+.car_img_wrap {
+    position:absolute;
+    height:100%;
+    width:100%;
+}
+.car_img_wrap img{
+    display:block;
+    width:100%;
+    height:auto;
+    margin-top:auto;
+    margin-bottom:auto;
+}
+#car_img_1 {
+    animation-name:carousel_img_fade_up;
+    animation-duration:15s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+#car_img_2 {
+    animation-name:carousel_img_fade_up;
+    animation-duration:15s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-delay:-3s;
+}
+#car_img_3 {
+    animation-name:carousel_img_fade_up;
+    animation-duration:15s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-delay:-6s;
+}
+#car_img_4 {
+    animation-name:carousel_img_fade_up;
+    animation-duration:15s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-delay:-9s;
+}
+#car_img_5 {
+    animation-name:carousel_img_fade_up;
+    animation-duration:15s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-delay:-12s;
+}
+@keyframes carousel_img_fade_up {
+
+    0% {
+        opacity:0%;
+
+        bottom:-20%;
+    }
+    5% {
+        opacity:100%;
+
+        bottom:0;
+    }
+    15% {
+        opacity:100%;
+
+        bottom:0;
+    }
+    20% {
+        opacity:0%;
+
+        bottom:20%;
+    }
+    100% {
+        opacity:0%;
+
+        bottom:20%;
+    }
+}
 @keyframes beam2_rotate {
     0%{
         transform:perspective(8px) rotateX(1deg) rotateZ(45deg);
@@ -281,7 +363,26 @@ main {
 
 
 }
-
+@keyframes name_fade_from_right {
+    0% {
+        opacity:0%;
+        right:-20%;
+    }
+    100% {
+        opacity:100%;
+        right:1rem;
+    }
+}
+@keyframes img_fade_from_left {
+    0% {
+        opacity:0%;
+        left:-2rem;
+    }
+    100% {
+        opacity:100%;
+        left:3rem;
+    }
+}
 @keyframes img_fade_up {
     0% {
         opacity:0%;
@@ -314,7 +415,7 @@ main {
 .tile_title {
     font-weight:600;
     font-size:2rem;
-    margin:1rem 2rem 3rem 2rem;
+    margin:1rem 2rem 1.5rem 2rem;
     font-style:italic;
 }
 .ext_link_button{
@@ -549,6 +650,93 @@ main {
 /*=============================================*/
 /*=============================================*/
 @media only screen and (min-width:900px) {
+    main {
+        max-width:100%;
+    }
+    #wel_1{
+        display:none;
+        animation:none;
+    }
+    #wel_2{
+        display:none;
+        animation:none;
+    }
+    #name{
+        animation-name:name_fade_from_right;
+        animation-delay:0s;
+        top: 85vh;
+    }
+    #wel_img{
+        animation-name:img_fade_from_left;
+        animation-delay:500ms;
+        max-width:600px;
+        display:block;
+        position:relative;
+        margin-top:5rem;
+    }
+    #beam1{
+        display:none;
+        animation:none;
+    }
+    #beam2{
+        display:none;
+        animation:none;
+    }
+    #navbar {
+        top:1rem;
+        left:0;
+        width:100%;
+        bottom:auto;
+        display:flex;
+        flex-flow:row nowrap;
+        justify-content: space-evenly;
+    }
+    #highlights {
+        animation-delay:500ms;
+    }
+    #profile-link {
+        animation-delay:750ms;
+    }
+    #contact {
+        animation-delay:1s;
+    }
 
+    #projects {
+
+        height:min-content;
+    }
+    .project-tile{
+        position:relative;
+        width:50%;
+        margin-top:6rem;
+        margin-bottom:1rem;
+
+
+    }
+    #proj_title {
+        display:none;
+    }
+    #GTA {
+        animation:none;
+        margin-left:40%;
+    }
+    #music {
+        animation:none;
+        margin-left:10%;
+    }
+    #sales {
+        animation:none;
+        margin-left:40%;
+    }
+    #police {
+        animation:none;
+        margin-left:10%;
+    }
+}
+
+@media only screen and (min-width:1100px) {
+    #desktop_img_carousel {
+        display:block;
+    }
 }
 /*=============================================*/
