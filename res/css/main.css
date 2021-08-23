@@ -123,23 +123,21 @@ main {
     top:30%;
     animation-duration:3s;
     animation-fill-mode:both;
-    
 }
+
 #wel_2 {
     font-size:3rem;
     font-weight:600;
     position:absolute;
     top:50%;
-
     animation-name:fade_in_from_left;
     animation-direction:reverse;
     animation-timing-function: ease-in-out;
-
     animation-duration:3s;
     animation-delay:3500ms;
     animation-fill-mode:both;
-
 }
+
 #name {
     font-size:4rem;
     font-weight:600;
@@ -153,6 +151,7 @@ main {
     animation-fill-mode: both;
     z-index:2;
 }
+
 #wel_img {
     width:100%;
     height:auto;
@@ -168,9 +167,7 @@ main {
     position:absolute;
     opacity:30%;
     background-color:antiquewhite;
-
     transform:perspective(8px) rotateX(1deg);
-
     height:500px;
     width:100px;
     box-shadow:0 0 5px antiquewhite;
@@ -205,11 +202,11 @@ main {
     right: -30%;
     animation-name:beam2_rotate;
     animation-duration:4s;
-
     animation-fill-mode: both;
     animation-iteration-count: 2;
     animation-timing-function: ease-in-out;
 }
+
 #desktop_img_carousel {
     height:300px;
     width:400px;
@@ -218,11 +215,13 @@ main {
     right:10%;
     display:none;
 }
+
 .car_img_wrap {
     position:absolute;
     height:100%;
     width:100%;
 }
+
 .car_img_wrap img{
     display:block;
     width:100%;
@@ -230,12 +229,14 @@ main {
     margin-top:auto;
     margin-bottom:auto;
 }
+
 #car_img_1 {
     animation-name:carousel_img_fade_up;
     animation-duration:15s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
 }
+
 #car_img_2 {
     animation-name:carousel_img_fade_up;
     animation-duration:15s;
@@ -243,6 +244,7 @@ main {
     animation-timing-function: linear;
     animation-delay:-3s;
 }
+
 #car_img_3 {
     animation-name:carousel_img_fade_up;
     animation-duration:15s;
@@ -250,6 +252,7 @@ main {
     animation-timing-function: linear;
     animation-delay:-6s;
 }
+
 #car_img_4 {
     animation-name:carousel_img_fade_up;
     animation-duration:15s;
@@ -257,6 +260,7 @@ main {
     animation-timing-function: linear;
     animation-delay:-9s;
 }
+
 #car_img_5 {
     animation-name:carousel_img_fade_up;
     animation-duration:15s;
@@ -264,31 +268,31 @@ main {
     animation-timing-function: linear;
     animation-delay:-12s;
 }
+
 @keyframes carousel_img_fade_up {
 
     0% {
         opacity:0%;
-
         bottom:-20%;
     }
+
     5% {
         opacity:100%;
-
         bottom:0;
     }
+
     15% {
         opacity:100%;
-
         bottom:0;
     }
+
     20% {
         opacity:0%;
-
         bottom:20%;
     }
+
     100% {
         opacity:0%;
-
         bottom:20%;
     }
 }
@@ -321,26 +325,21 @@ main {
 
     5% {
         opacity:0%;
-
-
         left:0;
     }
 
     30% {
         opacity:100%;
-
         left:10%;
     }
 
     70% {
         opacity:100%;
-
         left:10%;
     }
 
     95% {
         opacity:0%;
-
         left:30%;
     }
 
@@ -352,17 +351,14 @@ main {
 @keyframes name_down {
     0% {
         opacity: 0%;
-
         top:50%;
     }
     100% {
         opacity: 100%;
-
         top:70%;
     }
-
-
 }
+
 @keyframes name_fade_from_right {
     0% {
         opacity:0%;
@@ -373,6 +369,7 @@ main {
         right:1rem;
     }
 }
+
 @keyframes img_fade_from_left {
     0% {
         opacity:0%;
@@ -383,6 +380,7 @@ main {
         left:3rem;
     }
 }
+
 @keyframes img_fade_up {
     0% {
         opacity:0%;
@@ -402,8 +400,8 @@ main {
     width:100%;
     background-color:var(--col-8);
     overflow:hidden;
-
 }
+
 #proj_title {
     position:relative;
     font-weight:600;
@@ -412,12 +410,14 @@ main {
     top:5%;
     left:5%;
 }
+
 .tile_title {
     font-weight:600;
     font-size:2rem;
     margin:1rem 2rem 1.5rem 2rem;
     font-style:italic;
 }
+
 .ext_link_button{
     padding:2px 5px 2px 5px;
     position:relative;
@@ -426,11 +426,13 @@ main {
     background-color:var(--col-4);
     color:var(--col-8);
 }
+
 .ext_link_button:hover{
     bottom:2px;
     right:2px;
     box-shadow:2px 2px 0 var(--col-5);
 }
+
 .ext_link_button:active {
     bottom:0;
     right:0;
@@ -438,6 +440,7 @@ main {
     background-color:var(--col-2);
     color:var(--col-4);
 }
+
 .project-tile {
     padding-top:4rem;
     height:95%;
@@ -450,6 +453,7 @@ main {
 .project-tile p {
     margin:0.4rem;
 }
+
 #GTA {
     top:10%;
     left:0;
@@ -460,22 +464,27 @@ main {
     animation-iteration-count: infinite;
     transform-origin: -100% -100%;
 }
+
 #GTA p {
     margin-left:2rem;
 }
+
 #GTA_img{
     display:block;
     width:100%;
     height:auto;
     margin:2rem 0 2rem 0;
 }
+
 #GTA_pitch{
     margin-bottom:2rem;
 }
+
 .proj_desc{
     margin-right:1rem;
     text-align:right;
 }
+
 #music {
     top:10%;
     left:0;
@@ -487,17 +496,21 @@ main {
     animation-delay:-5s;
     transform-origin: -100% -100%;
 }
+
 .store{
     margin:0.5rem;
     text-decoration: none;
     color:var(--col-4);
 }
+
 .store:hover {
     color:var(--col-5);
 }
+
 .store:active {
     color:var(--col-2);
 }
+
 #music_img {
     display:block;
     width:100%;
@@ -506,10 +519,12 @@ main {
     margin-top:2rem;
     margin-bottom:2rem;
 }
+
 #song_title {
     margin-bottom:0.5rem;
     font-style:italic;
 }
+
 #sales {
     top:10%;
     left:0;
@@ -521,26 +536,32 @@ main {
     animation-delay:-10s;
     transform-origin: -100% -100%;
 }
+
 #sales figure {
     position:relative;
     height:210px;
     width:270px;
     margin:1rem 0 1rem 0;
 }
+
 .sales_img {
     width:100%;
     height:auto;
     margin-bottom:0.5rem;
 }
+
 #sales_smush {
     left:calc(100% - 2rem - 270px);
 }
+
 #sales_smush figcaption {
     text-align:right;
 }
+
 #sales_pekinese {
     left:2rem;
 }
+
 #police {
     top:10%;
     left:0;
@@ -552,11 +573,13 @@ main {
     animation-delay:-15s;
     transform-origin: -100% -100%;
 }
+
 #police img {
     width:100%;
     height:auto;
     margin-bottom: 1rem;
 }
+
 @keyframes wheel {
     0% {
         transform:rotate(0deg);
@@ -565,12 +588,12 @@ main {
 
     15% {
         transform:rotate(90deg);
-
     }
 
     30% {
         transform:rotate(180deg);
     }
+
     70% {
         transform:rotate(270deg);
         z-index:2;
@@ -578,13 +601,10 @@ main {
 
     73% {
         transform:rotate(360deg);
-
     }
-
 
     100% {
         transform:rotate(360deg);
-
     }
 }
 /*=============================================*/
@@ -599,9 +619,8 @@ main {
     left:50%;
     width:50%;
     max-width:300px;
-
-
 }
+
 #navbar a {
     position:relative;
     color:var(--col-4);
@@ -609,7 +628,6 @@ main {
     display:block;
     padding:0.5rem;
     text-align:center;
-
 }
 
 #navbar a:hover {
@@ -619,6 +637,7 @@ main {
 #navbar a:active {
     color:var(--col-2);
 }
+
 #highlights {
     animation-name:fade_left;
     animation-duration: 500ms;
@@ -642,6 +661,7 @@ main {
     animation-timing-function: ease-out;
     animation-fill-mode:both;
 }
+
 @keyframes fade_left {
     0% {
         opacity:0%;
@@ -705,7 +725,6 @@ main {
         max-width:100%;
     }
     #projects {
-
         height:min-content;
     }
     .project-tile{
@@ -713,8 +732,6 @@ main {
         width:50%;
         margin-top:6rem;
         margin-bottom:1rem;
-
-
     }
     #proj_title {
         display:none;

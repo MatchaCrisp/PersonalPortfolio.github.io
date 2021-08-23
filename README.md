@@ -1,0 +1,1 @@
+This is a pure HTML5/CSS3 one page website built for FCC Responsive Design Certification #5: Personal Portfolio.
